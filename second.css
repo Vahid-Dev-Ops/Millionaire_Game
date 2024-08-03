@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main-div{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./images/millionaire-main.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+}
+
+.points-div{
+    width: 250px;
+    height: 400px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background-color: rgb(32, 32, 99);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: 1.5px solid gold;
+    border-radius: 10px;
+}
+.points{
+    border: 1px solid yellow;
+    border-radius: 15px;
+    text-align: center;
+    color: gold;
+}
+.points-div-2{
+    display: none;
+}
+.question-div{
+    width: 600px;
+    height: 350px;
+    margin: auto;
+    position: relative;
+    margin-top: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.question{
+    width: 100%;
+    height: 200px;
+    background-color: rgb(32, 32, 99);
+    border: 2px solid gold;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    font-size: 1.3rem;
+}
+.answers-div{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.answer{
+    width: 250px;
+    height: 60px;
+    background-color: rgb(32, 32, 99);
+    border-radius: 10px;
+    pointer-events: all;
+    color: white;
+    font-size: 1.2rem;
+}
+.pop-up1{
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-color: rgb(52, 52, 130);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 3px solid red;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    display: none;
+    transition: 2s all;
+}
+.loser-div{
+    width: 50%;
+    height: 150px;
+    background-image: url(./images/donald-trump-loser-1230201.jpg);
+    background-size: cover;
+}
+a{
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    padding: 10px;
+    border: 3px solid darkgreen;
+    border-radius: 10px;
+}
+.pop-up2{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgb(52, 52, 130);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    color: gold;
+    font-size: 20px;
+    border: 3px solid gold;
+    border-radius: 10px;
+
+}
+.money-picture{
+    width: 70%;
+    height: 45%;
+    background-image: url(./images/millionaire-money-picture.jpg);
+    background-size: cover;
+}
+
+/*Responsive Design Section Starts*/
+@media screen and (max-width: 1200px){
+    .question-div{
+        margin-right: 300px;
+    }
+}
+@media screen and (max-width: 900px){
+    .main-div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .points-div{
+        display: none;
+    }
+    .points-div-2{
+        display: flex;
+        height: 120px;
+        position: initial;
+        margin: 20px auto;
+    }
+    .points{
+        height: 30px;
+        align-items: center;
+        justify-content: center;
+        display: none;
+    }
+    .second-div-points-1{
+        display: flex;
+    }
+    .heading-points{
+        display: block;
+        border: none;
+    }
+    .question-div{
+        margin: 0;
+    }
+}
+@media screen and (max-width: 700px){
+    .question-div{
+        width: 90%;
+    }
+    .answer{
+        width: 45%;
+    }
+}
+@media screen and (max-width: 600px){
+    .question-div{
+        height: 600px;
+    }
+    .question{
+        margin-bottom: 20px;
+    }
+    .answer{
+        width: 100%;
+    }
+    .loser-div{
+        width: 70%;
+        height: 175px;
+    }
+    .again a{
+        padding: 20px 30px;
+        font-size: 1.3rem;
+    }
+}
